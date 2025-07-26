@@ -10,7 +10,7 @@
         @apply text-base leading-[1.6] font-normal text-gray-7;
     }
     h3 {
-        @apply text-[24px] text-heading leading-[1.4] font-extrabold;
+        @apply text-[24px] text-gray-9 leading-[1.4] font-extrabold;
     }
     h4 {
         @apply text-[24px] leading-[1.4] font-extrabold text-gray-9;
@@ -20,6 +20,10 @@
     }
     h2 {
        @apply text-[35px] leading-[1.4] font-extrabold text-gray-9 pb-6;
+    }
+
+    h5{
+        @apply text-[20px] leading-[1.4] font-extrabold text-gray-9 max-w-[282px];
     }
 
     button {
@@ -67,13 +71,14 @@
   /* shadows */
   --shadow-1: 0 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0 2px 6.4px -1px rgba(19, 16, 34, 0.03);
   --shadow-2: 0 8px 18px -18px rgba(99, 101, 241, 0.901);
+  --shadow-3: 0 6px 18px -6px rgba(28, 160, 242, 0.803);
 }
 @utility container {
   margin-inline: auto;
 }
 
  /* .c{
-    box-shadow: rgba(99, 101, 241, 0.901);
+    box-shadow: rgba(28, 160, 242, 0.803);
  }  */
 
 
