@@ -35,11 +35,7 @@
           @apply bg-primary py-2 px-3 text-white rounded-[4px] cursor-pointer;  
     }
 }
-@layer utilities {
-    .gap-2 {
-         gap: 90px;
-    }
-}
+
 
 /* @layer  */
 
@@ -70,15 +66,15 @@
 
   /* shadows */
   --shadow-1: 0 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0 2px 6.4px -1px rgba(19, 16, 34, 0.03);
-  /* --shadow-2: 0 2px 6.4px -1px rgba(19, 16, 34, 0.03); */
+  --shadow-2: 0 8px 18px -18px rgba(99, 101, 241, 0.901);
 }
 @utility container {
   margin-inline: auto;
 }
 
-/* .c{
-    box-shadow: rgba(19, 16, 34, 0.06);
-} */
+ /* .c{
+    box-shadow: rgba(99, 101, 241, 0.901);
+ }  */
 
 
 
