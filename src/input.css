@@ -1,1 +1,84 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@layer base {
+    body {
+        @apply font-manrope;
+    }
+    p {
+        @apply text-base leading-[1.6] font-normal text-gray-7;
+    }
+    h3 {
+        @apply text-[24px] text-heading leading-[1.4] font-extrabold;
+    }
+    h4 {
+        @apply text-[24px] leading-[1.4] font-extrabold text-gray-9;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+       @apply text-[35px] leading-[1.4] font-extrabold text-gray-9 pb-6;
+    }
+
+    button {
+        background: blue;
+    }
+}
+
+@layer components {
+    .ami {
+          @apply after:contain-[''] after:w-10 after:h-10 after:bg-amber-700 after:absolute after:top-0 after:z-20;  
+    }
+    .common_btn {
+          @apply bg-primary py-2 px-3 text-white rounded-[4px] cursor-pointer;  
+    }
+}
+@layer utilities {
+    .gap-2 {
+         gap: 90px;
+    }
+}
+
+/* @layer  */
+
+@theme {
+  --color-primary: #6366F1;
+  --color-heading: red;
+  --color-paragraph: #565973;
+  --color-gray-1: #F3F6FF;
+  --color-gray-2: #9397AD;
+  --color-gray-3: #E2E5F1;
+  --color-gray-4: #9397AD;
+  --color-gray-5: #9397AD;
+  --color-gray-6: #9397AD;
+  --color-gray-7: #565973;
+  --color-gray-8: #9397AD;
+  --color-gray-9: #0B0F19;
+
+  /* Breakpoints */
+--breakpoint-*: initial;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 87.25rem;
+
+  /* Font Family */
+  --font-manrope: "Manrope", sans-serif;
+
+  /* shadows */
+  --shadow-1: 0 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  /* --shadow-2: 0 2px 6.4px -1px rgba(19, 16, 34, 0.03); */
+}
+@utility container {
+  margin-inline: auto;
+}
+
+/* .c{
+    box-shadow: rgba(19, 16, 34, 0.06);
+} */
+
+
+
