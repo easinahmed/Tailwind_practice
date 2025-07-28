@@ -26,9 +26,8 @@
         @apply text-[20px] leading-[1.4] font-extrabold text-gray-9 max-w-[282px];
     }
 
-    button {
-        background: blue;
-    }
+    
+    
 }
 
 @layer components {
@@ -50,8 +49,8 @@
   --color-gray-1: #F3F6FF;
   --color-gray-2: #9397AD;
   --color-gray-3: #E2E5F1;
-  --color-gray-4: #9397AD;
-  --color-gray-5: #9397AD;
+  --color-gray-4: #D4D7E5;
+  --color-gray-5: #B4B7C9;
   --color-gray-6: #9397AD;
   --color-gray-7: #565973;
   --color-gray-8: #9397AD;

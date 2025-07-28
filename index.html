@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- font awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -19,7 +21,7 @@
           <img src="./images/logo.svg" alt="LOGO" />
         </div>
         <!-- menu -->
-        <ul class="flex gap-5 items-center">
+        <ul class="flex gap-5 items-center font-semibold">
           <li>
             <a href="#" class="flex items-center gap-1">Services
               <span>
@@ -304,113 +306,180 @@
     <div class="container ">
       <div class=" mx-auto grid grid-cols-2 items-center gap-[134px] bg-gray-1 rounded-[8px]  py-[72px] px-[110px]">
 
-      <!-- Left: Contact Info -->
-      <div class="flex flex-col justify-between">
-        <div>
-          <h1 class="font-extrabold mb-6">Get in Touch</h1>
-          <p class="text-gray-7 mb-18 leading-[1.6] max-w-[416px]">
-            Have a project in mind? To request a quote contact us directly or fill out the form and let us know how we
-            can help.
-          </p>
+        <!-- Left: Contact Info -->
+        <div class="flex flex-col justify-between">
+          <div>
+            <h1 class="font-extrabold mb-6">Get in Touch</h1>
+            <p class="text-gray-7 mb-18 leading-[1.6] max-w-[416px]">
+              Have a project in mind? To request a quote contact us directly or fill out the form and let us know how we
+              can help.
+            </p>
 
-          <div class="py-4">
-            <h3>Contact Info</h3>
-
-
-            <div class="flex items-center mt-6 gap-3 text-gray-8">
-             <div class="icon">
-              <img src="./images/icons/bx-phone-call.svg" alt="icon">
-             </div>
-              <span>(406) 555-0120</span>
-            </div>
+            <div class="py-4">
+              <h3>Contact Info</h3>
 
 
-
-            <div class="flex items-center gap-3 mt-2 text-gray-8">
-              <div class="icon">
-                <img src="./images/icons/bx-envelope.svg" alt="icon">
+              <div class="flex items-center mt-6 gap-3 text-gray-8">
+                <div class="icon">
+                  <img src="./images/icons/bx-phone-call.svg" alt="icon">
+                </div>
+                <span>(406) 555-0120</span>
               </div>
-              <span>example@gmail.com</span>
-            </div>
 
 
-            <div class="flex items-center gap-3 mt-2 text-gray-8">
-            <div class="icon">
-              <img src="./images/icons/bx-map.svg" alt="icon">
+
+              <div class="flex items-center gap-3 mt-2 text-gray-8">
+                <div class="icon">
+                  <img src="./images/icons/bx-envelope.svg" alt="icon">
+                </div>
+                <span>example@gmail.com</span>
+              </div>
+
+
+              <div class="flex items-center gap-3 mt-2 text-gray-8">
+                <div class="icon">
+                  <img src="./images/icons/bx-map.svg" alt="icon">
+                </div>
+                <span>2464 Royal Ln. Mesa, New Jersey 45463</span>
+              </div>
             </div>
-              <span>2464 Royal Ln. Mesa, New Jersey 45463</span>
-            </div>
+          </div>
+
+
+          <!-- Social Icons -->
+          <div class="flex gap-3 mt-8">
+            <a href="#"
+              class="border-[1px] border-gray-3 hover:bg-[#1CA1F2] hover:text-white transition hover:shadow-3 p-3 rounded-[6px] text-[20px]">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+
+            <a href="#"
+              class="border-[1px] border-gray-3 hover:bg-[#1CA1F2] bg-[#1CA1F2] shadow-3 hover:text-white text-white transition p-3 rounded-[6px] text-[20px] ">
+              <i class="fab fa-twitter"></i>
+            </a>
+
+            <a href="#"
+              class="border-[1px] border-gray-3 hover:bg-[#1CA1F2] hover:shadow-3 hover:text-white transition p-3 rounded-[6px] text-[20px]">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="#"
+              class="border-[1px] border-gray-3 hover:bg-[#1CA1F2] hover:shadow-3  hover:text-white transition p-3 rounded-[6px] text-[20px]">
+              <i class="fab fa-instagram"></i>
+            </a>
           </div>
         </div>
 
-       
-        <!-- Social Icons -->
-        <div class="flex gap-3 mt-8">
-          <a href="#" class="border-[1px] border-gray-3 hover:bg-[#1CA1F2] hover:text-white transition hover:shadow-3 p-3 rounded-[6px] text-[20px]">
-            <i class="fa-brands fa-square-facebook"></i>
-          </a>
+        <!-- Right: Form -->
+        <form class="bg-white rounded-lg p-8  shadow-1">
+          <div class="mb-6">
+            <label class="block text-sm font-medium text-gray-700">Service</label>
+            <select
+              class="mt-1 w-full border border-gray-300 text-gray-5 cursor-pointer rounded-[8px] p-2 focus:ring-indigo-500 focus:border-indigo-500">
+              <option disabled selected>Choose the service you are interested in</option>
+              <option>Web Development</option>
+              <option>UI/UX Design</option>
+              <option>SEO Optimization</option>
+            </select>
+          </div>
 
-          <a href="#" class="border-[1px] border-gray-3 hover:bg-[#1CA1F2] bg-[#1CA1F2] shadow-3 hover:text-white text-white transition p-3 rounded-[6px] text-[20px] ">
-            <i class="fab fa-twitter"></i>
-          </a>
-          
-          <a href="#" class="border-[1px] border-gray-3 hover:bg-[#1CA1F2] hover:shadow-3 hover:text-white transition p-3 rounded-[6px] text-[20px]">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
+          <div class="mb-6">
+            <label class="block text-sm font-medium text-gray-700">Full name</label>
+            <input type="text"
+              class="mt-1 w-full border border-gray-300 rounded-[8px] p-2 focus:ring-primary focus:border-primary" />
+          </div>
 
-          <a href="#" class="border-[1px] border-gray-3 hover:bg-[#1CA1F2] hover:shadow-3  hover:text-white transition p-3 rounded-[6px] text-[20px]">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
+          <div class="mb-6">
+            <label class="block text-sm font-medium text-gray-700">Email address</label>
+            <input type="email"
+              class="mt-1 w-full border border-gray-300 rounded-[8px] p-2 focus:ring-primary focus:border-primary" />
+          </div>
+
+          <div class="mb-8">
+            <label class="block text-sm font-medium text-gray-700">Message</label>
+            <textarea rows="4"
+              class="mt-1 w-full border resize-none border-gray-300 rounded-[8px] p-2 focus:ring-primary focus:border-primary"
+              placeholder="Tell us about your project"></textarea>
+          </div>
+
+          <div class="flex items-center gap-2 mb-8">
+            <input type="checkbox" id="terms" class="h-4 w-4 text-primary border-gray-300 rounded" />
+            <label for="terms" class="text-sm text-gray-600">I agree to the <a href="#"
+                class="text-primary underline">Terms & Conditions</a>.</label>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-primary cursor-pointer  hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-[8px] shadow-md transition">
+            Send request
+          </button>
+        </form>
+
       </div>
-
-      <!-- Right: Form -->
-      <form class="bg-white rounded-lg p-8  shadow-1">
-        <div class="mb-6">
-          <label class="block text-sm font-medium text-gray-700">Service</label>
-          <select
-            class="mt-1 w-full border border-gray-300 text-gray-5 cursor-pointer rounded-[8px] p-2 focus:ring-indigo-500 focus:border-indigo-500">
-            <option disabled selected>Choose the service you are interested in</option>
-            <option>Web Development</option>
-            <option>UI/UX Design</option>
-            <option>SEO Optimization</option>
-          </select>
-        </div>
-
-        <div class="mb-6">
-          <label class="block text-sm font-medium text-gray-700">Full name</label>
-          <input type="text"
-            class="mt-1 w-full border border-gray-300 rounded-[8px] p-2 focus:ring-primary focus:border-primary" />
-        </div>
-
-        <div class="mb-6">
-          <label class="block text-sm font-medium text-gray-700">Email address</label>
-          <input type="email"
-            class="mt-1 w-full border border-gray-300 rounded-[8px] p-2 focus:ring-primary focus:border-primary" />
-        </div>
-
-        <div class="mb-8">
-          <label class="block text-sm font-medium text-gray-700">Message</label>
-          <textarea rows="4" 
-            class="mt-1 w-full border resize-none border-gray-300 rounded-[8px] p-2 focus:ring-primary focus:border-primary"
-            placeholder="Tell us about your project"></textarea>
-        </div>
-
-        <div class="flex items-center gap-2 mb-8">
-          <input type="checkbox" id="terms" class="h-4 w-4 text-primary border-gray-300 rounded" />
-          <label for="terms" class="text-sm text-gray-600">I agree to the <a href="#"
-              class="text-primary underline">Terms & Conditions</a>.</label>
-        </div>
-
-        <button type="submit"
-          class="w-full bg-primary cursor-pointer  hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-[8px] shadow-md transition">
-          Send request
-        </button>
-      </form>
-
-    </div>
     </div>
   </section>
+
+  <footer class="mt-[96px] mb-[64px]">
+    <div class="container">
+      <div class="footer_container grid grid-cols-12 ">
+        <div class="col-span-4">
+          <div>
+            <img src="./images/logo.svg" alt="logo">
+          </div>
+          <p class="mt-6  text-[16px] mb-10"> Proin ipsum pharetra, senectus eget scelerisque varius pretium platea
+            velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu
+            tempus, eget elementum dolor ullamcorper sodales ultrices eros. </p>
+
+
+            <div>
+              <label for="email" class="text-gray-9 font-semibold leading-[1.6]">Subscribe to our newsletter</label>
+              <form action="" class=" mt-2 grid grid-cols-[1fr_124px] relative ">
+                <span class=" absolute left-[16px] top-[50%] translate-y-[-50%]"><img src="./images/icons/footer-envelop.svg" alt="icon"></span>
+                <input type="email" name="" id="email" placeholder="Your Email" class="text-gray-5 text-[14px] leading-[1.6] py-[11px] pl-[44px] pr-[16px] focus: outline-0 border-[1px] border-gray-4  rounded-l-[6px] border-r-0 ">
+                <button type="submit" class="py-[11px] px-[28px] cursor-pointer bg-primary text-white rounded-r-[6px]"> Subscribe</button>
+              </form>
+
+            </div>
+
+
+        </div>
+        <div class="col-span-2"></div>
+
+        <div class="col-span-2">
+          <ul class="font-semibold flex flex-col gap-2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+
+          <ul class="mt-10 font-semibold flex flex-col gap-2">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-span-2">
+          <ul class="font-semibold flex flex-col gap-2">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Linkedin</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instragram</a></li>
+          </ul>
+        </div>
+
+        <div class="col-span-2">
+          <h6 class="text-[16px] font-semibold leading-[1.6] mb-2">Contact Us</h5>
+            <p class="text-primary"><u>example@gmail.com</u></p>
+        </div>
+
+      </div>
+
+      <div class="copy">
+        <p class="text-gray-6 text-[12px] mt-18">2021. All rights reserved. Silicon Template</p>
+      </div>
+    </div>
+  </footer>
 
 
 </body>
